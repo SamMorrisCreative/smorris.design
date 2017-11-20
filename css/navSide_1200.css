@@ -1,0 +1,228 @@
+*{
+    font-size: 18px;
+}
+
+.tiny {
+    display: none;
+}
+
+/* ---------------------------------------- Sidebar animation ------ */
+
+#navBtn{
+    display: inline;
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    z-index: 1000;
+}
+
+#navBtn.active {
+    left: 300px;
+}
+
+#navWrapper{
+    display: block;
+    height: 100vh;
+    width: 350px;
+    left: -351px;
+    text-align: center;
+    position: relative;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#navWrapper.active{
+    left: 0px;
+}
+
+
+/* ---------------------------------------- Hambuger --------- */
+
+#hamburger{
+    width: 30px;
+    height: 18px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+#hamburger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+/* ---------------------------------------- Hamburger animation ----------  */
+
+#hamburger span:nth-child(1) {
+    top: 2px;
+}
+
+#hamburger span:nth-child(2),#hamburger span:nth-child(3) {
+    top: 11px;
+}
+
+#hamburger span:nth-child(4) {
+    top: 20px;
+}
+
+#hamburger.open {
+    width: 23px;
+}
+
+#hamburger.open span{
+    height: 2px;
+}
+
+#hamburger.open span:nth-child(1) {
+    opacity: 0;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#hamburger.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#hamburger.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#hamburger.open span:nth-child(4) {
+    opacity: 0;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+
+/* ---------------------------------------- Sidebar styling ---------- */
+
+.nav {
+    padding-top: 5vh;
+}
+
+/* ---------------------------------------- Bio ---------- */
+
+.displayPic img{
+    width: 150px;
+}
+
+.bio {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.headline {
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-top: 3vh;
+}
+
+.blurb{
+}
+
+/* ---------------------------------------- Contact ---------- */
+
+.contactWrapper {
+    margin-top: 2em;
+}
+
+.contactMe{
+    margin-top: 100px;
+    padding: 1em 2em;
+    border-radius: 2px;
+    font-weight: 400;
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+
+.contactMe:hover{
+}
+
+.contactMe:active{
+}
+
+/* ---------------------------------------- Links ---------- */
+
+
+.links {
+    margin-top: 2em;
+}
+
+.links ul {
+}
+
+.links ul li a div{
+    padding: 20px 0px;
+}
+
+/* ---------------------------------------- Footer ---------- */
+
+.footer {
+    right: 0;
+    left: 0;
+    margin-top: 2em;
+    /*bottom: 0px;
+    position: relative;*/
+    -webkit-transition: 0s linear;
+    -moz-transition: 0s linear;
+    -o-transition: 0s linear;
+    transition: 0s linear;
+}
+
+.footer ul{
+    margin-top: .8em;
+}
+
+.footer ul li{
+    margin-top: 2em;
+    display: inline;
+    text-decoration: none;
+    margin-left: .2em;
+    margin-right: .2em;
+}
+
+.socialNav li{
+    display: inline;
+}
+
+.socialNav li a{
+    font-size: 1em;
+}

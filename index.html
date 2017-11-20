@@ -1,102 +1,153 @@
-<!doctype html>
+<!doctype HTML>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>creative & design</title>
-    <!-- CSS -->
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Sidenav test</title>
+        
+        <!-- CSS -->
+        
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <!-- Nav -->
+            
+        <link rel="stylesheet" type="text/css" media="only screen and (orientation: landscape) and (max-height:479px)" href="css/navSideFill_520.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (min-height:480px) and (max-height:600px)" href="css/navSide_600.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (min-height:601px) and (max-height:899px)" href="css/navSide_900.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (min-height:900px)" href="css/navSide_1200.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (orientation: portrait) and (min-height:480px) and (max-height:639px)" href="css/navFill_480.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (orientation: portrait) and (min-height:640px) and (max-height:767px)" href="css/navFill_640.css">
+        
+        <!-- Slideshow -->
+        
+        <link rel="stylesheet" type="text/css" media="all and (min-width:1921px)" href="css/slideshow_4k.css">
+        <link rel="stylesheet" type="text/css" media="all and (min-width:1401px)" href="css/slideshow_HD.css">
+        <link rel="stylesheet" type="text/css" media="all and (max-width:1400px)" href="css/slideshow_SD.css">
+        <link rel="stylesheet" type="text/css" media="all and (orientation: portrait)" href="css/slideshow_Mob.css">
+        
+        <!-- Tiny -->
+        
+        <link rel="stylesheet" type="text/css" media="only screen and (max-width:480px) and (max-height:320px)" href="css/tiny.css">
+        
+        <!-- fonts -->
+
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="https://use.typekit.net/jqr1qzg.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        
+        <!-- Scripts -->
+        
+        <script src="js/hamburger.js"></script>
+        
+        
+    </head>
     
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/buttonStyle.css">
-    <link rel="stylesheet" href="css/slideshow.css">
-    <link rel="stylesheet" href="css/main.css">
-    
-    <!-- FONTS -->
-    <script src="https://use.typekit.net/jqr1qzg.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    
-    <!-- SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <script type="text/javascript" src="js/myscripts.js"></script>
-
-</head>
-<body>    
-
-
-    <div class="dropWrapper">
-
-<div id="myButton">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-        <div id="dropPanel">
-            <div class="dropContent"><img src="image/ProfilePic.png">
-                
-<!-- TOP LINKS -->
-                
-                <!--div class="navWrapper">
-                <ul class="nav">
-                    <li><a href="file:///Users/Creative/Documents/02_Web/ConformMedia/Projects.html">Projects</a></li>
-                    <li><a href="file:///Users/Creative/Documents/02_Web/ConformMedia/Blog.html">Blog</a></li>
-                    <li><a href="file:///Users/Creative/Documents/02_Web/ConformMedia/download/SMORRIS_CV_03-2017.pdf">Folio</a></li>
-            </ul>
-                </div-->
-                
-<!-- BLURB -->
-                
-                <div class="headline">
-                    <h4>Hi, I'm Sam, a creative with a love for logos, typography, and print.</h4>
-                </div>
-
-                <div>
-                    <p>I'm a Multimdia and Advertising taught creative with a plethora of skills.
-                    <br/>You can get in touch or dig a little deeper with the links below.</p>
-                </div>
-                    <div class="contactMe">
-                        <a href="mailto:sm.creative@outlook.com?Subject=Hey%20Sam,%20I%20saw%20your%20site" target="_top" class="bodyContact">Say Hi</a>
-                    </div>
-                
-<!-- SOCIAL MEDIA -->
-                
-                <div class="socialNav">
-                <p class="small">Portfolio Download & External Links
-                </p>
-                <ul class="nav">
-                    <li>
-                    <a href="../download/SMORRIS_CV_03-2017.pdf" target="_blank">
-                        <span class="fa-stack fa-lg contact">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-file-text fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    </li>
-                    <li>
-                    <a href="https://www.linkedin.com/in/samtom2014/" target="_blank">
-                        <span class="fa-stack fa-lg linkedIn">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    </li>
-                    <!--li>
-                    <a href="https://www.spreadshirt.com" target="_blank">
-                        <span class="fa-stack fa-lg shop">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    </li-->
-                </ul>
+    <body>
+        
+        <div class="tiny">
+            <h3>Sam Morris</h3>
+            <p>Creative & Design</p>
+            <div class="tinyLinks">
+                <a  href="mailto:sm.creative@outlook.com?Subject=Hey%20Sam,%20I%20saw%20your%20site..." target="_top" class="bodyContact"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                <a  href="download/SMORRIS_CV_03-2017.pdf"><span><i class="fa fa-download" aria-hidden="true"></i></span></a>
+                <a  href="https://www.linkedin.com/in/samtom2014/"><span><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
             </div>
         </div>
-    </div>
-    
-    
-<!-- BG SLIDESHOW -->
-    
-    <ul class="cb-slideshow">
+        
+        <div id="navBtn" onclick="toggleHam()">
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div id="navWrapper">
+            
+            <div class="nav">
+                
+                
+<!-- Bio section -->
+                
+                
+                
+                <div class="bio">
+                    <div class="displayPic"><img src="images/Close.png"></div>
+
+                    <div class="bioBody">
+                        <h5 class="headline">Hi, I'm Sam,</br> a multimedia creative with a love for logos, typography, and print.</h5>
+                        <p class="blurb">Based in South Wales, I like to practice my craft with other passionate creatives to make awesome stuff together.<p>
+                        <p>You've seen some of my work, now get in touch or dig a little deeper with the links below.</p>
+                    </div>
+                </div>
+                               
+                
+<!-- Links section -->
+   
+                <!--div class="links">
+                    <ul>
+                        <li><a href="#"><div class="">Link</div></a></li>
+                    </ul>
+                </div-->
+            
+<!-- Footer/Social section -->
+
+                
+             
+                
+                <div class="footer">
+                    
+                    <h6>Portfolio Download & External Links</h6>
+
+                    <ul class="socialNav">
+                        <li>
+                            <a  href="mailto:sm.creative@outlook.com?Subject=Hey%20Sam,%20I%20saw%20your%20site..." target="_top" class="bodyContact">
+                            <span class="fa-stack fa-lg contact">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        </li>                        <li>
+                        <a href="download/SMORRIS_CV_03-2017.pdf" target="_blank">
+                            <span class="fa-stack fa-lg download">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-download fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://www.linkedin.com/in/samtom2014/" target="_blank">
+                            <span class="fa-stack fa-lg linkedIn">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        </li>
+                        <li>
+                        <!--a href="https://www.spreadshirt.com" target="_blank">
+                            <span class="fa-stack fa-lg shop">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        </li-->
+                    </ul>
+                                        
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+<!-- Slideshow section -->
+
+        
+                
+        <div id="slideshow">
+        
+            <ul class="cb-slideshow">
         <li>
             <span>Image 01</span>
             <!--<div><h3>Header</h3></div>-->
@@ -122,8 +173,9 @@
             <!--<div><h3>Header</h3></div>-->
         </li>
     </ul>
+        
+        </div>
+        
+    </body>
     
-    <script type="text/javascript" rel="stylsheet" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" rel="stylsheet" src="js/bootstrap.js"></script>
-</body>
 </html>

@@ -1,227 +1,217 @@
-body{
+/* Main CSS handles all clours throughout the website. See other stylesheets for sizes/layout */
+
+
+* {
+    padding: 0;
+    margin: 0;
     font-family: "niveau-grotesk", sans-serif;
+    font-size: 18px;
+    font-kerning: auto;
 }
 
-a {
-    color: #003758;
-    -webkit-transition: ease 0.2s;
-    -moz-transition: ease 0.2s;
-    -o-transition: ease 0.2s;
-    transition: ease 0.2s;
+h1{
+    font-size: 3em:
 }
 
-a:hover {
-    color: #e95b0c;
+h2 {
+    font-size: 2.5em;
 }
 
-.headline{
-    margin-left: 7%;
-    margin-right: 7%;
+h3 {
+    font-size: 1.6em;
 }
 
 h4 {
-    font-size: 1.2em;
+    font-size: 1.6em;
+}
+
+h5 {
     font-weight: 400;
+    font-size: 1.2em;
     color: #e95b0c;
+    margin-bottom: 1em;
+}
+
+h6 {
+    font-weight: 200;
+    font-size: .6em;
+    color: grey;
+    margin-bottom: .4em;
 }
 
 p {
-    font-weight: 200;
+    font-weight: 400;
     color: dimgray;
+    font-size: 1em;
+    margin-bottom: 1em;
 }
 
-.meh {
-    margin-top: 5%;
+a{
+    color: #003758;
+    text-decoration: none;
 }
 
-.small {
-
-    font-size: 0.6em;
-}
-
-/* Dropdown Styling */
-
-.dropWrapper {
-    text-align: center;
-}
-
-#dropPanel {
-    position: relative;
-    z-index: -5;
-    opacity: 0;
-    display: inline-block;
-    padding-top: 30px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-top: -30px;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-    /*width: 28vw;
-    height: 80vh;*/
-    width: 300px;
-    height: 500px;
-    border: lightgray 1px solid;
-    background-color: whitesmoke;
-    box-shadow: 0px 3px 2px rgba(5,5,5,0.3);
-    border-radius: 3px;
-    -webkit-transition: all 0.3s ease-out 0.2s;
-    -moz-transition: all 0.3s ease-out 0.2s;
-    -o-transition: all 0.3s ease-out 0.2s;
-    transition: all 0.3s ease-out 0.2s;
-}
-
-#dropPanel.on {
-    z-index: 500;
-    opacity: 1;
-    margin-top: 5px;
-} 
-
-.dropContent img {
-    width: 125px;
-    border-radius: 100%;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
-}
-
-/* Navigation */
-
-.navWrapper {
-    margin-top: 20px;
-}
-
-.nav {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav li {
-    display: inline;
+ul{
     list-style: none;
 }
 
-.nav li a{
-    display: inline-block;
-    text-decoration: none;
-    margin-left: 5px;
-    margin-right: 5px;
+/* ---------- Hamburger Styling ---------- */
+
+#hamburger span{
+    background: #003758;
 }
 
-/* Contact Me Link */
-
-.contactMe {
-    margin-top: 12%;
+#hamburger:hover span{
+    background: #e95b0c;
 }
 
-.bodyContact{
-    padding: 8px 12px 8px 12px;
-    border-radius: 2px;
+/* ---------- Sidebar Styling ---------- */
+
+
+#navWrapper {
+    background-color: whitesmoke;
+    border-right: 1px solid dimgray;
+}
+
+.displayPic img{
+    box-shadow: 0px 3px 2px rgba(5,5,5,0.3);
+    border-radius: 100%;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    transition: 0.1s linear;
+}
+
+/* ---------- Contact ---------- */
+
+
+.contactMe{
     color: #003758;
-    text-decoration: none;
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+ }
+
+.contactMe:hover{
+    color: white;
+    background-color: #003758;
+    box-shadow: 0px 3px 2px rgba(5,5,5,0.3);
     -webkit-transition: ease 0.2s;
     -moz-transition: ease 0.2s;
     -o-transition: ease 0.2s;
     transition: ease 0.2s;
 }
 
-.bodyContact:hover{
-    color: white;
-    background-color: #003758;
-}
-
-.bodyContact:active{
+.contactMe:active{
     color:white;
     background-color: #e95b0c;
-    -webkit-transition: ease 0.0s;
-    -moz-transition: ease 0.0s;
-    -o-transition: ease 0.0s;
-    transition: ease 0.0s;
+    box-shadow: none;
+    -webkit-transition: ease 0s;
+    -moz-transition: ease 0s;
+    -o-transition: ease 0s;
+    transition: ease 0s;
+    transform: translateY(3px)
 }
 
+/* ---------- Links ---------- */
 
-/* Download Button */
 
-.download{
-    background-color: #003758;
-    border: none;
-    border-radius: 2px;
+.links ul li a div{
+    color: #003758;
+}
+
+.links ul li:nth-child(1) a div{
+    border-top: 1px solid lightgray;
+}
+
+.links ul li a div{
+    border-bottom: 1px solid lightgray;
+    background-color: none;
+}
+
+.links ul li a div:hover{
     color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition: ease 0.2s;
-    -moz-transition: ease 0.2s;
-    -o-transition: ease 0.2s;
-    transition: ease 0.2s;
+    background-color: #003758;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
 }
 
-.download:hover{
-    background-color: #e95b0c;
+.links {
+    <!--display: none;-->
 }
 
-/* Social Media */
 
-.socialNav {
-	position: absolute;
-	bottom: 25px;
-	right: 0;
-    left: 0;
-    text-align: center;
-}
+/* ---------- Footer ---------- "active" states should offer user feedback on touch devices */
 
-.socialNav a{
+
+.socialNav li a{
     color: #ddd;
+}
+
+.socialNav li a span{
     -webkit-transition: ease 0.2s;
     -moz-transition: ease 0.2s;
     -o-transition: ease 0.2s;
     transition: ease 0.2s;
-}
-
-.socialNav a:hover {
-    transform: translate(0px, -2px);
 }
 
 .socialNav .fa-circle {
     text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
 }
 
-.socialNav .fa-stack {
-    
-}
-
-.iconAlign {
-    transform: translate(0px, 2px)
-}
-
 .contact:hover {
+    color: #003758;
+    transform: translate(0px, -2px);
+}
+
+.contact:active {
+    color: #003758;
+    -webkit-transition: ease 0s;
+    -moz-transition: ease 0s;
+    -o-transition: ease 0s;
+    transition: ease 0s;
+}
+
+.download:hover {
     color: #e95b0c;
-    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    transform: translate(0px, -2px);
+}
+
+.download:active {
+    color: #e95b0c;
+    -webkit-transition: ease 0s;
+    -moz-transition: ease 0s;
+    -o-transition: ease 0s;
+    transition: ease 0s;
 }
 
 .linkedIn:hover {
     color: #0077b5;
-    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    transform: translate(0px, -2px);
 }
 
-.behance:hover {
+.linkedIn:active {
     color: #0077b5;
-    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    -webkit-transition: ease 0s;
+    -moz-transition: ease 0s;
+    -o-transition: ease 0s;
+    transition: ease 0s;
 }
 
 .shop:hover {
     color: #46d056;
-    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    transform: translate(0px, -2px);
 }
 
-.twitch:hover {
-    color: #6144a4;
-    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+.shop:active {
+    color: #46d056;
+    -webkit-transition: ease 0s;
+    -moz-transition: ease 0s;
+    -o-transition: ease 0s;
+    transition: ease 0s;
 }
 
-.pinterest:hover{
-    color: #e62117;
-    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
-}
+

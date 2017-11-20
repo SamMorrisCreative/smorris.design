@@ -1,0 +1,70 @@
+.project{
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    width: 1200px;
+    height: 625px;
+
+}
+
+.cropWrapper {
+    position: relative;
+    width: 1200px;
+    height: 625px;
+    overflow: hidden;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+
+.projectImg {
+    display: block;
+    position: absolute;
+    top: -25%;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #111;
+}
+
+.projectDescription {
+    position: absolute;
+    padding: 100px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .2s ease;
+}
+
+.projectDescription h3{
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 15px;
+    bottom: 15px;
+}
+
+.projectDescription p{
+    font-size: 1em;
+    color: white;
+    margin-bottom: 15px;
+        bottom: 15px;
+
+}
+
+.project:Hover .overlay{
+    opacity: 0.9;
+}
+
+.project:Hover .projectDescription{
+    opacity: 1;
+}
