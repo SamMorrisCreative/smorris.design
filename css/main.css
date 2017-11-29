@@ -4,7 +4,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "niveau-grotesk", sans-serif;
+    /*font-family: "niveau-grotesk", sans-serif;*/
+    font-family: "proxima-nova", sans-serif;
     font-size: 18px;
     font-kerning: auto;
 }
