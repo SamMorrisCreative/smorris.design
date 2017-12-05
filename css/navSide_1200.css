@@ -27,8 +27,8 @@
 #navWrapper{
     display: block;
     height: 100vh;
-    width: 350px;
-    left: -351px;
+    width: 400px;
+    left: -401px;
     text-align: center;
     position: relative;
     -webkit-transition: .3s ease-in-out;
@@ -148,7 +148,7 @@
 }
 
 .headline {
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-weight: 200;
     margin-top: 3vh;
 }
