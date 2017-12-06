@@ -21,14 +21,14 @@
 }
 
 #navBtn.active {
-    left: 350px;
+    left: 315px;
 }
 
 #navWrapper{
     display: block;
     height: 100vh;
-    width: 400px;
-    left: -401px;
+    width: 365px;
+    left: -366px;
     text-align: center;
     position: relative;
     -webkit-transition: .3s ease-in-out;
