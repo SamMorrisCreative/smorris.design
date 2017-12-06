@@ -36,13 +36,13 @@ h5 {
 h6 {
     font-weight: 200;
     font-size: .6em;
-    color: grey;
+    color: lightslategray;
     margin-bottom: .4em;
 }
 
 p {
-    font-weight: 400;
-    color: dimgray;
+    font-weight: 200;
+    color: #003758;
     font-size: 1em;
     margin-bottom: 1em;
 }
@@ -64,6 +64,10 @@ ul{
 
 #hamburger:hover span{
     background: #e95b0c;
+}
+
+#hamburger:active span{
+    background: #003758;
 }
 
 /* ---------- Sidebar Styling ---------- */
