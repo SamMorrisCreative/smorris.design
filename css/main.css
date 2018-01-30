@@ -173,7 +173,7 @@ ul{
 }
 
 .contact:active {
-    color: #003758;
+    color: #e95b0c;
     -webkit-transition: ease 0s;
     -moz-transition: ease 0s;
     -o-transition: ease 0s;
@@ -181,7 +181,7 @@ ul{
 }
 
 .download:hover {
-    color: #e95b0c;
+    color: #003758;
     transform: translate(0px, -2px);
 }
 
@@ -199,7 +199,7 @@ ul{
 }
 
 .linkedIn:active {
-    color: #0077b5;
+    color: #283e4a;
     -webkit-transition: ease 0s;
     -moz-transition: ease 0s;
     -o-transition: ease 0s;
