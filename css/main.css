@@ -47,6 +47,10 @@ p {
     margin-bottom: 1em;
 }
 
+.highlight {
+    font-weight: 400;
+}
+
 a{
     color: #003758;
     text-decoration: none;
